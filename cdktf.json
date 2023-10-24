@@ -1,0 +1,27 @@
+{
+  "language": "typescript",
+  "app": "npx ts-node main.ts",
+  "projectId": "903552d9-0e3b-41d3-a2f0-804606e9e7e7",
+  "sendCrashReports": "true",
+  "terraformProviders": [
+    "hashicorp/random@~> 3.5"
+  ],
+  "terraformModules": [
+    {
+      "name": "aurora",
+      "source": "terraform-aws-modules/rds-aurora/aws",
+      "version": "~> 8.5"
+    },
+    {
+      "name": "vpc",
+      "source": "terraform-aws-modules/vpc/aws",
+      "version": "~> 5.1.2"
+    },
+    {
+      "name": "securitygroup",
+      "source": "terraform-aws-modules/security-group/aws",
+      "version": "~> 4.13"
+    }
+  ],
+  "context": {}
+}
